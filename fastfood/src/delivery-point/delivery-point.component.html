@@ -1,0 +1,9 @@
+<div class="delivery">
+    <h2>Componente Punto de Entrega</h2>
+    <ul>
+        <li *ngFor="let pedido of paraEntregar">
+            {{pedido.number}} - {{pedido.name}}
+            <button (click)="entregarPedido(pedido)">Entregar</button>
+        </li>
+    </ul>
+</div>
