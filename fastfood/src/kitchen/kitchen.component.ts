@@ -22,6 +22,7 @@ export class KitchenComponent {
 
   cocinarPedido(pedido: Pedido) {
     this.pedidoService.cocinarPedido(pedido);
+    this.pendientes = this.pedidoService.getPendientes();
     this.enCoccion = this.pedidoService.getEnCoccion();
   }
 
